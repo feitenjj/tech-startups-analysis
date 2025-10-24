@@ -1,0 +1,52 @@
+# ========================
+# Python
+# ========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+.venv/
+.ipynb_checkpoints/
+
+# ========================
+# Jupyter
+# ========================
+*.ipynb_checkpoints
+
+# ========================
+# Data (raw)
+# ========================
+data/raw/
+data/*.csv
+data/*.xlsx
+data/*.parquet
+
+# ========================
+# OS
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# IDEs
+# ========================
+.vscode/
+.idea/
+
+# ========================
+# Envs & packages
+# ========================
+/.env
+/anaconda_projects/
+.conda/
+*.egg-info/
+
+# ========================
+# Pip/Poetry lock files - if you prefer not to track
+# ========================
+venv/
+
+
+data/raw/companies.csv
