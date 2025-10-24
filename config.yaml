@@ -1,0 +1,15 @@
+data:
+  raw: "data/raw"
+  processed: "data/processed"
+  external: "data/external"
+
+project:
+  name: "tech-startups-analysis"
+  author: "Seu Nome Aqui"
+
+settings:
+  country_focus:
+    - "UK"
+    - "DE"
+    - "FR"
+  timezone: "Europe/Lisbon"
