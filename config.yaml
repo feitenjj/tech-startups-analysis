@@ -1,45 +1,7 @@
-# -----------------------------------------------------------
-# config.yaml
-# Centralized Configuration Parameters for Project Analysis
-# -----------------------------------------------------------
+input_data:
+ 	 file1: "../data/raw/raw/Unicorn_Companies.csv"
+output_data:
+  	file1: "../data/clean/companies_cleaned.parquet"
+ 	file2: "../data/clean/final_analysis_merged.parquet”
+ file3: "../data/clean/unicorns_standardized.parquet”
 
-# 1. PATHS
-paths:
-  # CORRECTED PATH to the final, merged Parquet file after cleaning
-  final_merged_data: ../data/clean/final_analysis_merged.parquet
-  # Output path for saving figures (charts)
-  figures_output: outputs/figures/
-
-# 2. PARAMETERS (Thresholds and Filters)
-parameters:
-  # Filter for time series analysis (e.g., founders after 2001)
-  filter_year_companies: 2001 
-  # Filter for H4 analysis (Unicorns founded after 2013)
-  filter_year_unicorns: 2013   
-  
-  # Visualization parameters
-  top_n_countries: 10
-  top_n_industries: 10
-  
-  # Value for Hypothesis H4 test (e.g., average time to unicorn < 10 years)
-  time_to_unicorn_hypothesized: 10 # years
-
-# 3. COLUMNS (Guarantees code doesn't break if a column name changes)
-columns:
-  # Keys used for Joins and Grouping (standardized)
-  key_company: company
-  key_country: country
-  key_industry: industry
-  
-  # Input Metrics (Factors of Success)
-  metric_foundation_year: founded_year
-  
-  # Output Metrics (Target/Results)
-  metric_is_unicorn: is_unicorn
-  metric_joined_date: date_joined_unicorn
-  
-  # Final Consolidated Financial Metric
-  metric_funding: total_raised_usd_b_final
-  
-  # Metric to be created in Step 4
-  metric_time_to_unicorn: time_to_unicorn
