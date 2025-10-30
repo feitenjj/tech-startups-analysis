@@ -8,9 +8,6 @@
 
 This project is a comprehensive data analysis focused on identifying the key determinants of success for startups that achieve **Unicorn status** (valuation over $1 billion). Driven by the goal of understanding the data-driven path to hyper-growth, the analysis provides a strategic comparison between general startups and successful Unicorn companies.
 
-The scope is rigorously anchored by two distinct temporal filters :
-* **Post-Dot-Com Era ($\text{Year} > 2001$):** To focus on ventures with more sustainable business models that emerged after the 2000/2001 collapse.
-* **Modern Unicorn Definition ($\text{Year} > 2013$):** To align the sample with the concept of hyper-growth, high-valuation private firms coined by Aileen Lee.
 
 ## 💡 2. Motivation and Goal
 
@@ -50,43 +47,17 @@ The analysis relies on a unified, merged dataset created from two primary source
 | **Unicorn Companies Dataset** | Data specifically on companies achieving $1B+ valuation. | [https://www.kaggle.com/datasets/deepcontractor/unicorn-companies-dataset](https://www.kaggle.com/datasets/deepcontractor/unicorn-companies-dataset) |
 | **Startups Dataset** | Provides a broad overview of general startups for comparison. | [https://www.kaggle.com/datasets/amirataha/startups](https://www.kaggle.com/datasets/amirataha/startups) |
 
-## 🚀 6. How to Execute the Code
-
-To replicate the analysis, follow these steps:
-
-1.  **Dependencies:** Ensure all required libraries (e.g., Pandas, Matplotlib, Seaborn, Statmodels) are installed.
-2.  **Run Data Wrangling:** Execute the **`data_wrangling.ipynb`** notebook to clean the raw data, apply the temporal filters, calculate the key metrics, and generate the final analysis-ready Parquet file.
-3.  **Run Analysis and Visualization:** Execute the **`analysis_and_viz.ipynb`** notebook to explore the cleaned dataset, test the hypotheses, and generate all visualizations.
-
-## 📁 7. Files Included
-
-| Item | Description |
-| :--- | :--- |
-| `data_wrangling.ipynb` | Main notebook for data cleaning, filtering, and feature engineering. |
-| `functions.py` | Library of all custom preprocessing and calculation functions. |
-| `analysis_and_viz.ipynb` | Notebook for exploratory analysis, hypothesis testing, and visualization. |
-| `final_analysis_merged.parquet` | The final, cleaned, analysis-ready dataset output. |
-| **Figures/** | Directory containing all visual outputs from the analysis. |
-
-## 🎯 8. Key Results (Highlights!)
+## 🎯 6. Key Results (Highlights!)
 
 The analysis provided tangible conclusions for market professionals and investment strategists:
 
-* **Speed is the New Normal (H3):** The average time for a company founded post-2001 to reach Unicorn status is **significantly under 10 years**, validating the modern era of accelerated hyper-growth.
-* **Sectoral Concentration (H2):** The hypotheses were confirmed; **Software and Fintech** have the overwhelming highest concentration of Unicorns. 
+* **Speed is the New Normal (H3):** The average time for a company founded post-2001 to reach Unicorn status **is not under 10 years**.
+* **Sectoral Concentration (H2):** **Software and Web** have the overwhelming highest concentration of Unicorns. 
 * **Capital vs. Speed (H4A & H4B):**
     * **Total Funding (H4A)** showed a clear **negative correlation** with Time to Unicorn (Companies with more capital achieve the status faster).
-    * **Funding Concentration (H4B)** showed a *stronger* negative correlation slope compared to total capital, suggesting **efficient capital deployment (high investment per investor)** is a better predictor of rapid growth than simply the aggregate amount raised. 
+    * **Funding Concentration (H4B)** showed a positive correlation slope, suggesting **efficient capital deployment (high investment per investor)** is **not**  predictor of rapid growth. 
 
-## 🖼️ 9. Principal Visualizations
-
-(These are placeholders for your actual generated charts in the GitHub repository's **Figures/** directory.)
-
-* 
-* 
-* 
-
-## 💻 10. Technologies Used
+## 💻 7. Technologies Used
 
 * **Programming:** Python
 * **Data Manipulation:** Pandas, NumPy
@@ -99,4 +70,4 @@ The analysis provided tangible conclusions for market professionals and investme
 ### External Links
 
 * **Presentation Slides:** [https://docs.google.com/presentation/d/1rqnrnPdxmuw_oeOFyjBLASJP6oJAKPjgPw6eSoiW4tI/edit?usp=sharing](https://docs.google.com/presentation/d/1rqnrnPdxmuw_oeOFyjBLASJP6oJAKPjgPw6eSoiW4tI/edit?usp=sharing)
-* **Tableau Public Dashboard (Funding Concentration):** [https://public.tableau.com/views/StartupAnalysis_17617584928210/FundingConcentration?:language=pt-BR&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link](https://public.tableau.com/views/StartupAnalysis_17617584928210/FundingConcentration?:language=pt-BR&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+* **Tableau Public Dashboard (Funding Concentration):** [https://public.tableau.com/views/StartupAnalysis_17617584928210/TotalFunding?:language=pt-BR&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link](https://public.tableau.com/views/StartupAnalysis_17617584928210/FundingConcentration?:language=pt-BR&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
