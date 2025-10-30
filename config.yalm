@@ -5,8 +5,8 @@
 
 # 1. PATHS
 paths:
-  # CORRECTED PATH to the final, merged Parquet file after cleaning
-  final_merged_data: ../data/clean/final_analysis_merged.parquet
+  # Path to the final, merged Parquet file after cleaning
+  final_merged_data: final_analysis_merged.parquet
   # Output path for saving figures (charts)
   figures_output: outputs/figures/
 
@@ -21,7 +21,8 @@ parameters:
   top_n_countries: 10
   top_n_industries: 10
   
-  # Value for Hypothesis H4 test (e.g., average time to unicorn < 10 years)
+  # Value for Hypothesis H4 test (e.g., average time to unicorn < 10 
+years)
   time_to_unicorn_hypothesized: 10 # years
 
 # 3. COLUMNS (Guarantees code doesn't break if a column name changes)
